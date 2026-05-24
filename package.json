@@ -1,0 +1,40 @@
+{
+  "name": "agent-pipeline",
+  "version": "0.1.0",
+  "description": "Production-grade multi-step research agent: fit → guard → vet → cast → snap. Full mukundakatta agent-stack wired together.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "agent-pipeline": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/*.test.js",
+    "demo": "node dist/cli.js"
+  },
+  "keywords": [
+    "ai-agent",
+    "llm",
+    "mcp",
+    "anthropic",
+    "agent-stack",
+    "fit",
+    "guard",
+    "snap",
+    "vet",
+    "cast"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3",
+    "@mukundakatta/agentfit": "^0.1.1",
+    "@mukundakatta/agentguard": "^0.1.1",
+    "@mukundakatta/agentsnap": "^0.1.1",
+    "@mukundakatta/agentvet": "^0.1.1",
+    "@mukundakatta/agentcast": "^0.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
